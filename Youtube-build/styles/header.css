@@ -74,7 +74,27 @@
     border-style:solid;
     border-color: rgb(196, 196, 196);
     margin-left:-1px;
+    position:relative;
 }
+.search .tooltip{
+    font-family: "Roboto", Arial;
+    position:absolute;
+    bottom: -45px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left:8px;
+    padding-right:8px;
+    background-color:gray;
+    color:white;
+    font-size:11px;
+    opacity: 0;
+    transition: opacity(0.15s);
+}
+
+.search:hover .tooltip{
+    opacity:1;
+}
+
 .search:hover{
     cursor:pointer;
 }
@@ -107,19 +127,39 @@
     padding-right:20px;
     width:180px;
 }
+   
 
 .upload{
-    width:40px;
-    height:40px;
     border-style:none;
     background-color: white;
+    position:relative;
 }
+/* .upload:hover .tooltip{
+    opacity:1;
+}
+.tooltip{
+    font-family: "Roboto", Arial;
+    position:absolute;
+    bottom:-35px;
+    margin-left:-10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left:8px;
+    padding-right:8px;
+    background-color:gray;
+    color:white;
+    font-size:11px;
+    opacity: 0;
+} */
+
 
 .apps{
-    width:40px;
-    height:40px;
     border-style:none;
     background-color: white;
+    position:relative;
+}
+.apps:hover .tooltip{
+    opacity:1;
 }
 
 .notifications{
@@ -127,7 +167,7 @@
     height:40px;
     border-style:none;
     background-color: white;
-    position:relative;
+    position:relative;  
     padding:0;
     margin-top: 10px;
 }
@@ -152,6 +192,7 @@
 }
 .noted:hover{
     cursor:pointer;
+    
 }
 
 .channel-img{
