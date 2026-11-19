@@ -22,7 +22,13 @@ body{
 }
  .first-row{
 	  position:relative;
-	  position:relative;position:relative;position:relative;position:relative;position:relative;position:relative;position:relative;
+	  display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	column-gap:18px;
+	row-gap:40px;
+	margin-left:10px;
+	margin-right:10px;
+} 
 
  }
  .img-1{
