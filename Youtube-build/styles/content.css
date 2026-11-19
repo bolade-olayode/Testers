@@ -22,17 +22,8 @@ body{
 }
  .first-row{
 	  position:relative;
-background-color: black;
-	color:white;
-	position:absolute;
-	right: 10px;
-	bottom: 10px;
-	font-size: 13px;
-	padding:3px;
-	font-family: "Roboto", Arial;
-	font-weight: 600;
-	border-radius:2px;
  }
+
  .img-1{
   width:100%;
 }	
