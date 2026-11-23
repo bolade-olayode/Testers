@@ -92,9 +92,11 @@
     pointer-events: none;
 }
 
-.search:hover .tooltip{
+.search:hover .tooltip,
+.voice:hover .tooltip{
     opacity:1;
 }
+
 
 .search:hover{
     cursor:pointer;
@@ -125,15 +127,13 @@
     background-color:gray;
     color:white;
     font-size: 12px;
-    width:70px;
     opacity: 0;
     transition: opacity 0.15s;
     pointer-events: none;
+    white-space: nowrap;
 
 }
-.voice:hover .tooltip{
-    opacity:1;
-}
+
 .voice:hover{
     cursor:pointer;
 }
@@ -159,7 +159,9 @@
     position:relative;
 }
 
-.upload .tooltip{
+.upload .tooltip,
+.apps .tooltip{
+
     font-family: "Roboto", Arial;
     position:absolute;
     bottom:-30px;
@@ -173,6 +175,10 @@
     font-size:11px;
     width:40px; 
     opacity: 0;
+    z-index: 200;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
 .upload:hover .tooltip{
