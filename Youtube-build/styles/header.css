@@ -160,20 +160,19 @@
 }
 
 .upload .tooltip,
-.apps .tooltip{
-
+.apps .tooltip,
+.notifications .tooltip{
     font-family: "Roboto", Arial;
     position:absolute;
     bottom:-30px;
-    margin-left:-10px;
+    left:-10px;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left:8px;
     padding-right:8px;
     background-color:gray;
     color:white;
-    font-size:11px;
-    width:40px; 
+    font-size:12px;
     opacity: 0;
     z-index: 200;
     transition: opacity 0.15s;
@@ -206,6 +205,9 @@
 }
 .notifications:hover{
     cursor:pointer;
+}
+.notifications:hover .tooltip{
+    opacity:1;
 }
 
 .notification-counter{
